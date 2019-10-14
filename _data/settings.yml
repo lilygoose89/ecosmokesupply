@@ -1,0 +1,22 @@
+basic_settings:
+  site_title: Cali Eco Verde Smoke Supply
+  favicon_image: /images/favicon.png
+  og_image:
+  logo_image: /images/caliecosmokesupply-white.png
+
+colors:
+  color1: '#53b761'
+  color2: '#d5f6f2'
+  color3: '#49ac7f'
+  color4: '#daede5'
+  text-color: '#292c30'
+  text-box-bg: 'rgba(239,242,239,0.8)'
+
+email: ecoverdesmokesupply@gmail.com
+phone: 4843345963
+
+contact_settings:
+  form_action: 'https://formspree.io/ecoverdesmokesupply@gmail.com'
+  confirmation_url: '/thanks'
+  email_subject: 'Message via Cali Eco Smoke Supply Website'
+  send_button_text: 'Send Message'

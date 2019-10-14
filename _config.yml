@@ -1,0 +1,19 @@
+site: California Eco Smoke Supply
+
+url: "https://www.californiaecosmokesupply.com/" # the base hostname & protocol for your site
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description:
+author:
+  name: Emily Clapp
+  email: ecoverdesmokesupply@gmail.com
+  twitter:
+social:
+  name:
+  links:
+    - californiaecosmokesupply.com

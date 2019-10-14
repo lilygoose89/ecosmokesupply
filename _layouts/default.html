@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  {% include ga.html %}
+  <body style="background: linear-gradient(35deg,{{site.data.settings.colors.color1}},{{site.data.settings.colors.color2}}); background-size: 400% 400%; animation: gradientBG 20s ease infinite;">
+    {% include nav.html %}
+    {{content}}
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>
