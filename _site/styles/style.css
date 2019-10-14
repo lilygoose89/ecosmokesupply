@@ -23,7 +23,12 @@ img {
   margin: 0;
   padding: 0;
 }
-
+.header-padding {
+  padding: 0 10%;
+}
+section {
+  margin: 5% 15%;
+}
 @media all and (max-width:1024px) {
 
 }
@@ -47,16 +52,25 @@ img {
   }
 }
 /* link and button styles ----------------------------------------- */
+.button-header {
 
+}
+.button-main {
+
+}
 /* container styles ----------------------------------------- */
-
+.text-box {
+  background: rgba(255,258,258,0.9);
+  border-radius: 22px;
+}
 /* header and nav styles ----------------------------------------- */
 .nav {
-  position: fixed;
+  /* position: fixed; */
+  height: 30vh;
   width: 100%;
 }
 .header {
-  height: 100vh;
+  height: 70vh;
 }
 /* Scroll to top */
 .scroll-to-top-container {
@@ -73,11 +87,30 @@ img {
   animation: wobbleud 1s linear infinite;
   -webkit-font-smoothing: antialiased;
 }
+/* page styles ----------------------------------------- */
+.headshot {
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  width: 100%;
+  min-height: 500px;
+  background-image: url(/images/emily.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
+.testimonial-headshot {
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  width: 100%;
+  min-height: 200px;
+  background-image: url(/images/emily.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
 /* footer styles ----------------------------------------- */
-
-/* homepage styles ----------------------------------------- */
-
-/* post styles ----------------------------------------- */
 
 /* form styles ----------------------------------------- */
 
