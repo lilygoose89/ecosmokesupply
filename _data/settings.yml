@@ -1,12 +1,40 @@
 basic_settings:
-  site_title: Cali Eco Verde Smoke Supply
+  site_title: Cali Eco Smoke Supply
   favicon_image: /images/favicon.ico
-  og_image:
+  og_image: /images/screenshot.png
   logo_image: /images/caliecosmoke-logo-white.png
 
 header:
   header_image: /images/leaves.jpg
   header_image_opacity: 0.2
+
+about:
+  headshot: /images/emily.jpg
+  icon1: /images/sustainable.svg
+  text1: 'Sustainable'
+  icon2: /images/healthy.svg
+  text2: 'Healthy'
+  icon3: /images/trust.svg
+  text3: 'Reliable'
+
+testimonials:
+  testimonial1:
+    name: 'Testimonial 1'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial2:
+    name: 'Testimonial 2'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial3:
+    name: 'Testimonial 3'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial4:
+    name: 'Testimonial 4'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+
 
 colors:
   color1: '#49ac7f'
@@ -14,7 +42,6 @@ colors:
   color3: '#d5f6f2'
   color4: '#daede5'
   text-color: '#202b2f'
-
 
 phone: '4843345963'
 scheduling_link: 'https://calendly.com/'
