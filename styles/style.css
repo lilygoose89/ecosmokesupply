@@ -136,16 +136,19 @@ a:hover {
 }
 .header {
   height: 100vh;
+  position: absolute;
+  z-index: 2;
+  top: 0;
 }
-/* .header-image {
+.header-image {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow-y: hidden;
   position: relative;
-  z-index: -2;
-} */
+  top: 1px;
+}
 .header-text {
   font-size: 1.3em;
 }
