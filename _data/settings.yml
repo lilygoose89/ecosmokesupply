@@ -1,13 +1,13 @@
 basic_settings:
   site_title: Cali Eco Verde Smoke Supply
-  favicon_image: /images/favicon.png
+  favicon_image: /images/favicon.ico
   og_image:
-  logo_image: /images/caliecosmokesupply-white.png
+  logo_image: /images/caliecosmoke-logo-white.png
 
 colors:
-  color1: '#53b761'
-  color2: '#d5f6f2'
-  color3: '#49ac7f'
+  color1: '#49ac7f'
+  color2: '#53b761'
+  color3: '#d5f6f2'
   color4: '#daede5'
   text-color: '#292c30'
 
