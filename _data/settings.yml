@@ -4,12 +4,16 @@ basic_settings:
   og_image:
   logo_image: /images/caliecosmoke-logo-white.png
 
+# header:
+#   header_image: /images/leaf.png
+#   header_image_opacity: 0.2
+
 colors:
   color1: '#49ac7f'
   color2: '#53b761'
   color3: '#d5f6f2'
   color4: '#daede5'
-  text-color: '#292c30'
+  text-color: '#202b2f'
 
 email: ecoverdesmokesupply@gmail.com
 phone: 4843345963

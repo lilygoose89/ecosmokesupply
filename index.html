@@ -6,7 +6,9 @@ author: Emily Clapp
 image:
 layout: default
 ---
-<header class="header header-padding grid-bottom text-shadow">
+<!-- <div class ="header-image" style="background-image: url({{site.data.settings.header.header_image}}); opacity: {{site.data.settings.header.header_image_opacity}};">
+</div> -->
+<header class="header header-padding grid-bottom">
   <nav id="top" class="nav grid-spaceBetween">
     <div class="logo-container">
       <img src="{{site.data.settings.basic_settings.logo_image}}" alt="cali eco smoke logo"/>
@@ -62,7 +64,7 @@ layout: default
   </div>
 </section>
 <section>
-  <h2>Trusted by clients, partners and industry leaders.</h2>
+  <h2 class="text-center text-white">Trusted by clients, partners and industry leaders.</h2>
   <!-- grid around all four testimonial boxes -->
   <div class="grid">
     <div class="col-6">
@@ -108,7 +110,7 @@ layout: default
   </div>
 </section>
 <section>
-  <h2 class="text-center">Services</h2>
+  <h2 class="text-center text-white">Services</h2>
   <div class="text-box pad-all-s">
     <h3>Service 1</h3>
     <p>
@@ -165,7 +167,24 @@ layout: default
 <section>
   <a href="tel:{{site.data.settings.phone}}" class="text-center"><h2 class="text-white">Call us today 484-334-5963</h2></a>
   <div class="text-box margin-top-m pad-all-s">
-    <h2 class="text-center">Contact</h2>
-    ADD FORM HERE
+    <h2 class="text-center">Send an Email</h2>
+    <form method="post" action="{{ site.data.settings.contact_settings.form_action }}" id="contact-form">
+      <div class="contact-form__item">
+        <input type="text" name="email" placeholder="Your email address..." class="contact-form__input">
+      </div>
+      <div class="contact-form__item">
+        <input type="text" name="name" placeholder="Your name..." class="contact-form__input">
+      </div>
+      <div class="contact-form__item">
+        <textarea name="message" placeholder="Your message..." class="contact-form__textarea"></textarea>
+      </div>
+      <input type="hidden" name="_next" value="{{ site.data.settings.contact_settings.confirmation_url }}" />
+      <input type="hidden" name="_subject" value="{{ site.data.settings.contact_settings.email_subject }}" />
+      <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="">
+      <div class="contact-form__item">
+        <input type="submit" value="{{ site.data.settings.contact_settings.send_button_text }}" class="button-main" style="background:{{site.data.settings.colors.color1}};
+          border: solid {{site.data.settings.colors.color1}} 1px; width: 100%;">
+      </div>
+    </form>
   </div>
 </section>

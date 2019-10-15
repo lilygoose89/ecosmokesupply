@@ -75,31 +75,44 @@ p,li {
 /* link and button styles ----------------------------------------- */
 .button-main {
   border-radius: 16px;
-  display:inline-block;
   cursor:pointer;
   color: white;
   padding:13px 32px;
   font-family: 'Poppins', sans-serif;
   text-decoration:none;
-  box-shadow: 2px 2px 6px rgba(69,69,69,0.6);
+  opacity: 0.85;
+}
+.button-main:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .button-white {
-  background: white;
-  border: solid white 1px;
+  border: 3px solid white;
   border-radius: 16px;
   display:inline-block;
   cursor:pointer;
-  color: grey;
   padding:13px 32px;
   font-family: 'Poppins', sans-serif;
   text-decoration:none;
-  box-shadow: 2px 2px 6px rgba(69,69,69,0.6);
+  background: none;
+  color: #fff;
+}
+.button-white:hover {
+  background: white;
+  color: grey;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 a {
   text-decoration: none;
 }
 a:hover {
-  
+
 }
 /* container styles ----------------------------------------- */
 .text-box {
@@ -124,6 +137,15 @@ a:hover {
 .header {
   height: 100vh;
 }
+/* .header-image {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: hidden;
+  position: relative;
+  z-index: -2;
+} */
 .header-text {
   font-size: 1.3em;
 }
@@ -169,7 +191,29 @@ a:hover {
 /* footer styles ----------------------------------------- */
 
 /* form styles ----------------------------------------- */
-
+input,textarea,select {
+  background: rgba(255,255,255,.1);
+  border: none;
+  font-size: 16px;
+  /* height: auto; */
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  margin-bottom: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+textarea {
+  min-height: 220px;
+}
+input:focus,textarea:focus {
+  background: white;
+}
+.form-label{
+  line-height: 2em;
+}
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
   .text-center-mobile {
