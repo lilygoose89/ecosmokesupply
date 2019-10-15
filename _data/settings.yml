@@ -9,12 +9,12 @@ header:
   header_image_opacity: 0.2
 
 about:
-  headshot: /images/emily.jpg
-  icon1: /images/sustainable.svg
+  headshot_image: /images/emily.jpg
+  icon1_image: /images/sustainable.svg
   text1: 'Sustainable'
-  icon2: /images/healthy.svg
+  icon2_image: /images/healthy.svg
   text2: 'Healthy'
-  icon3: /images/trust.svg
+  icon3_image: /images/trust.svg
   text3: 'Reliable'
 
 testimonials:
@@ -37,19 +37,18 @@ testimonials:
 
 
 colors:
-  color1: '#49ac7f'
-  color2: '#53b761'
-  color3: '#d5f6f2'
-  color4: '#daede5'
-  text-color: '#202b2f'
-
-phone: '4843345963'
-scheduling_link: 'https://calendly.com/'
+  primary_color: '#49ac7f'
+  secondary_color: '#53b761'
+  tertiery_color: '#d5f6f2'
+  light_color: '#daede5'
+  dark_color: '#202b2f'
 
 contact_settings:
   email: ecoverdesmokesupply@gmail.com
   email_subject: 'Message via Cali Eco Smoke Supply Website'
   send_button_text: 'Send Message'
+  phone: '4843345963'
+  scheduling_link: 'https://calendly.com/'
 
 social_settings:
   facebook_url: 'https://www.facebook.com/'

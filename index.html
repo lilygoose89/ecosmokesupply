@@ -13,7 +13,7 @@ layout: default
       <img src="{{site.data.settings.basic_settings.logo_image}}" alt="cali eco smoke logo"/>
     </div>
     <div class="hide-tablet">
-      <a href="tel:{{site.data.settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
+      <a href="tel:{{site.data.settings.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
     </div>
   </nav>
   <div class="col-8_md-12 center-on-mobile">
@@ -23,36 +23,36 @@ layout: default
     <h2 class="text-white editable">Because your green should also be green.</h2>
     <div class="grid pad-bottom-m">
       <a href="/#about" class="pad-right-xs hide-mobile"><button class="button-white">Learn More</button></a>
-      <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
 <section id="about">
   <div class="text-box grid-middle">
-    <span class="col-6_md-12 headshot" style="background-image: url({{site.data.settings.about.headshot}});"></span>
+    <span class="col-6_md-12 headshot" style="background-image: url({{site.data.settings.about.headshot_image}});"></span>
     <div class="col-6_md-12">
       <div class="pad-all-s">
         <h3 class="editable">Work with us to make your dispensary’s packaging and supplies more eco-friendly.</h3>
         <p class="editable">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.color1}};
+        <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.color1}};
           border: solid {{site.data.settings.colors.color1}} 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween pad-top-xs">
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon1}}"/>
+            <img src="{{site.data.settings.about.icon1_image}}"/>
             <p>
               {{site.data.settings.about.text1}}
             </p>
           </div>
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon2}}"/>
+            <img src="{{site.data.settings.about.icon2_image}}"/>
             <p>
               {{site.data.settings.about.text2}}
             </p>
           </div>
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon3}}"/>
+            <img src="{{site.data.settings.about.icon3_image}}"/>
             <p>
               {{site.data.settings.about.text3}}
             </p>
@@ -152,7 +152,7 @@ layout: default
     <div class="col-9_md-12">
       <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
       <p class="header-text text-white editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </section>
@@ -170,7 +170,7 @@ layout: default
   </div>
 </section>
 <section>
-  <a href="tel:{{site.data.settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
+  <a href="tel:{{site.data.settings.contact_settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
   <div class="grid-spaceAround pad-all-xs pad-top-s">
     {% if site.data.settings.social_settings.facebook_url != '' %}
     <div>
