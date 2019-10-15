@@ -173,7 +173,7 @@ a {
 .scroll-to-top-container {
   position: fixed;
   bottom: 50px;
-  right: 20px;
+  right: 15px;
 }
 .scroll-to-top-icon {
   font-size: 2em;
@@ -201,6 +201,9 @@ a {
 
 
 /* page styles ----------------------------------------- */
+.icon {
+  max-width: 330px;
+}
 .headshot {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
@@ -257,9 +260,14 @@ a {
   .testimonial-headshot {
     min-height: 250px;
   }
+  .icon {
+    max-width: 100px;
+  }
 }
 @media all and (max-width:576px) {
-
+  .icon {
+    max-width: 80px;
+  }
 }
 
 /* footer styles ----------------------------------------- */
