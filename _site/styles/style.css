@@ -74,6 +74,16 @@ p,li {
 }
 /* link and button styles ----------------------------------------- */
 .button-main {
+  border-radius: 16px;
+  display:inline-block;
+  cursor:pointer;
+  color: white;
+  padding:13px 32px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration:none;
+  box-shadow: 2px 2px 6px rgba(69,69,69,0.6);
+}
+.button-white {
   background: white;
   border: solid white 1px;
   border-radius: 16px;
@@ -84,6 +94,12 @@ p,li {
   font-family: 'Poppins', sans-serif;
   text-decoration:none;
   box-shadow: 2px 2px 6px rgba(69,69,69,0.6);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  
 }
 /* container styles ----------------------------------------- */
 .text-box {
@@ -130,8 +146,9 @@ p,li {
 .headshot {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
-  width: 100%;
-  min-height: 500px;
+  height: 550px;
+  /* width: 100%; */
+  /* min-height: 500px; */
   background-image: url(/images/emily.jpg);
   background-repeat: no-repeat;
   background-size: cover;

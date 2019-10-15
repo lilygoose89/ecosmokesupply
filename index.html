@@ -15,14 +15,14 @@ layout: default
       <a href="tel:{{site.data.settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
     </div>
   </nav>
-  <div class="col-8">
+  <div class="col-8_md-12 center-on-mobile">
     <p class="header-text text-white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <h2 class="text-white">Because your green should also be green.</h2>
     <div class="grid pad-bottom-m">
-      <a class="pad-right-xs"><button class="button-main">Learn More</button></a>
-      <a><button class="button-main">Schedule a Consultation</button></a>
+      <a class="pad-right-xs"><button class="button-white">Learn More</button></a>
+      <a><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
@@ -35,7 +35,8 @@ layout: default
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <a><button class="button-main margin-top-xs margin-bottom-s">Schedule a Consultation</button></a>
+        <a><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.color1}};
+          border: solid {{site.data.settings.colors.color1}} 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween">
           <div>
             <img src="images/sustainable.svg"/>
@@ -139,10 +140,14 @@ layout: default
     </div>
   </div>
 </section>
-<section class="text-center">
-  <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-  <a><button class="button-header">Schedule a Consultation</button></a>
+<section>
+  <div class="grid-center text-center">
+    <div class="col-9_md-12">
+      <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
+      <h3 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+      <a><button class="button-white">Schedule a Consultation</button></a>
+    </div>
+  </div>
 </section>
 <section>
   <div class="text-box grid">
@@ -158,8 +163,8 @@ layout: default
   </div>
 </section>
 <section>
-  <a href="tel:{{site.data.settings.phone}}" class="text-center"><h2><i></i>Call us today 484-334-5963</h2></a>
-  <div class="text-box pad-all-s">
+  <a href="tel:{{site.data.settings.phone}}" class="text-center"><h2 class="text-white">Call us today 484-334-5963</h2></a>
+  <div class="text-box margin-top-m pad-all-s">
     <h2 class="text-center">Contact</h2>
     ADD FORM HERE
   </div>
