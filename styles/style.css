@@ -149,6 +149,18 @@ a:hover {
 .header-text {
   font-size: 1.3em;
 }
+.social-icon {
+  color: white;
+  font-size: 3em;
+  opacity: 0.85;
+}
+.social-icon:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 /* Scroll to top */
 .scroll-to-top-container {
   position: fixed;
@@ -157,10 +169,10 @@ a:hover {
 }
 .scroll-to-top-icon {
   font-size: 2em;
-  color: rgba(47, 50, 58, 0.2);
+  color: rgba(225,225,225,0.85);
 }
 .scroll-to-top-icon:hover {
-  color: rgba(47, 50, 58, 0.9);
+  color: rgb(225,225,225);
   animation: wobbleud 1s linear infinite;
   -webkit-font-smoothing: antialiased;
 }

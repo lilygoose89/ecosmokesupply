@@ -24,7 +24,7 @@ layout: default
     <h2 class="text-white">Because your green should also be green.</h2>
     <div class="grid pad-bottom-m">
       <a class="pad-right-xs"><button class="button-white">Learn More</button></a>
-      <a><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
@@ -37,22 +37,22 @@ layout: default
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <a><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.color1}};
+        <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.color1}};
           border: solid {{site.data.settings.colors.color1}} 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween">
-          <div>
+          <div class="text-center">
             <img src="images/sustainable.svg"/>
             <p>
               Sustainable
             </p>
           </div>
-          <div>
+          <div class="text-center">
             <img src="images/healthy.svg"/>
             <p>
               Healthy
             </p>
           </div>
-          <div>
+          <div class="text-center">
             <img src="images/trust.svg"/>
             <p>
               Reliable
@@ -64,7 +64,7 @@ layout: default
   </div>
 </section>
 <section>
-  <h2 class="text-center text-white">Trusted by clients, partners and industry leaders.</h2>
+  <h2 class="text-center text-white pad-bottom-s">Trusted by clients, partners and industry leaders.</h2>
   <!-- grid around all four testimonial boxes -->
   <div class="grid">
     <div class="col-6">
@@ -147,7 +147,7 @@ layout: default
     <div class="col-9_md-12">
       <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
       <h3 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-      <a><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{site.data.settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </section>
@@ -166,19 +166,56 @@ layout: default
 </section>
 <section>
   <a href="tel:{{site.data.settings.phone}}" class="text-center"><h2 class="text-white">Call us today 484-334-5963</h2></a>
+  <div class="grid-spaceAround pad-all-xs pad-top-s">
+    {% if site.data.settings.social_settings.facebook_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.facebook_url}}" target="blank"><i class="fa fa-facebook-square social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+    {% if site.data.settings.social_settings.instagram_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.instagram_url}}" target="blank"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+    {% if site.data.settings.social_settings.twitter_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.twitter_url}}" target="blank"><i class="fa fa-twitter-square social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+    {% if site.data.settings.social_settings.youtube_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.youtube_url}}" target="blank"><i class="fa fa-youtube-square social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+    {% if site.data.settings.social_settings.pinterest_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.pinterest_url}}" target="blank"><i class="fa fa-pinterest-square social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+    {% if site.data.settings.social_settings.linkedin_url != '' %}
+    <div>
+      <a href="{{site.data.settings.social_settings.linkedin_url}}" target="blank"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i></a>
+    </div>
+    {% else %}
+    {% endif %}
+  </div>
   <div class="text-box margin-top-m pad-all-s">
-    <h2 class="text-center">Send an Email</h2>
-    <form method="post" action="{{ site.data.settings.contact_settings.form_action }}" id="contact-form">
-      <div class="contact-form__item">
-        <input type="text" name="email" placeholder="Your email address..." class="contact-form__input">
+    <h2 class="text-center pad-bottom-s">Send an Email</h2>
+    <form method="post" action="https://formspree.io/{{site.data.settings.contact_settings.email}}" id="contact-form">
+      <div>
+        <input type="text" name="email" placeholder="Your email address...">
       </div>
-      <div class="contact-form__item">
-        <input type="text" name="name" placeholder="Your name..." class="contact-form__input">
+      <div>
+        <input type="text" name="name" placeholder="Your name...">
       </div>
-      <div class="contact-form__item">
-        <textarea name="message" placeholder="Your message..." class="contact-form__textarea"></textarea>
+      <div>
+        <textarea name="message" placeholder="Your message..."></textarea>
       </div>
-      <input type="hidden" name="_next" value="{{ site.data.settings.contact_settings.confirmation_url }}" />
       <input type="hidden" name="_subject" value="{{ site.data.settings.contact_settings.email_subject }}" />
       <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="">
       <div class="contact-form__item">

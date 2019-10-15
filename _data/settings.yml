@@ -15,11 +15,19 @@ colors:
   color4: '#daede5'
   text-color: '#202b2f'
 
-email: ecoverdesmokesupply@gmail.com
-phone: 4843345963
+
+phone: '4843345963'
+scheduling_link: 'https://calendly.com/'
 
 contact_settings:
-  form_action: 'https://formspree.io/ecoverdesmokesupply@gmail.com'
-  confirmation_url: '/thanks'
+  email: ecoverdesmokesupply@gmail.com
   email_subject: 'Message via Cali Eco Smoke Supply Website'
   send_button_text: 'Send Message'
+
+social_settings:
+  facebook_url: 'https://www.facebook.com/'
+  twitter_url: 'https://www.twitter.com/'
+  instagram_url: 'https://www.instagram.com/'
+  youtube_url: 'https://www.youtube.com/'
+  pinterest_url: 'https://www.pinterest.com/'
+  linkedin_url: 'https://www.linkedin.com/'
