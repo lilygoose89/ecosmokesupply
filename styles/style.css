@@ -41,7 +41,9 @@ section {
 
 }
 @media all and (max-width:576px) {
-
+  section {
+    margin: 5% 10%;
+  }
 }
 
 /* typography ----------------------------------------- */
@@ -76,6 +78,7 @@ p,li {
 .button-main {
   border-radius: 16px;
   cursor:pointer;
+  display: inline-block;
   color: white;
   padding:13px 32px;
   font-family: 'Poppins', sans-serif;
@@ -92,9 +95,9 @@ p,li {
 .button-white {
   border: 3px solid white;
   border-radius: 16px;
-  display:inline-block;
+  display: inline-block;
   cursor:pointer;
-  padding:13px 32px;
+  padding: 13px 32px;
   font-family: 'Poppins', sans-serif;
   text-decoration:none;
   background: none;
@@ -111,8 +114,22 @@ p,li {
 a {
   text-decoration: none;
 }
-a:hover {
+@media all and (max-width:1024px) {
 
+}
+@media all and (max-width:768px) {
+  .button-white {
+    margin-bottom: 2%;
+    background: white;
+    color: grey;
+  }
+}
+@media all and (max-width:576px) {
+  .button-white {
+    font-size: 0.8em;
+    padding: 8px 28px;
+    border-radius: 10px;
+  }
 }
 /* container styles ----------------------------------------- */
 .text-box {
@@ -152,18 +169,6 @@ a:hover {
 .header-text {
   font-size: 1.3em;
 }
-.social-icon {
-  color: white;
-  font-size: 3em;
-  opacity: 0.85;
-}
-.social-icon:hover {
-  opacity: 1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 /* Scroll to top */
 .scroll-to-top-container {
   position: fixed;
@@ -179,6 +184,22 @@ a:hover {
   animation: wobbleud 1s linear infinite;
   -webkit-font-smoothing: antialiased;
 }
+@media all and (max-width:1024px) {
+  .logo-container {
+    text-align: center;
+  }
+  .header-text {
+    font-size: 1em;
+  }
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+
+}
+
+
 /* page styles ----------------------------------------- */
 .headshot {
   border-top-left-radius: 22px;
@@ -203,6 +224,44 @@ a:hover {
   background-position: center;
   overflow-y: hidden;
 }
+.social-icon {
+  color: white;
+  font-size: 3em;
+  opacity: 0.85;
+}
+.social-icon:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media all and (max-width:1024px) {
+  .headshot {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 0;
+    height: 450px;
+  }
+  .testimonial-headshot {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 22px;
+    min-height: 350px;
+  }
+}
+@media all and (max-width:768px) {
+  .headshot {
+    height: 300px;
+  }
+  .testimonial-headshot {
+    min-height: 250px;
+  }
+}
+@media all and (max-width:576px) {
+
+}
+
 /* footer styles ----------------------------------------- */
 
 /* form styles ----------------------------------------- */
