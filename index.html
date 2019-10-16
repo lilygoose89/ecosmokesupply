@@ -3,17 +3,69 @@ title: Cali Eco Smoke Supply
 description: Work with us to make your dispensary’s packaging and supplies more eco-friendly.
 keywords:
 author: Emily Clapp
+basic_settings:
+  site_title: Cali Eco Smoke Supply
+  favicon_image: /images/favicon.ico
+  og_image: /images/screenshot.png
+  logo_image: /images/caliecosmoke-logo-white.png
+header:
+  header_image: /images/leaves.jpg
+  header_image_opacity: 0.2
+about:
+  headshot_image: /images/emily.jpg
+  icon1_image: /images/sustainable.svg
+  text1: 'Sustainable'
+  icon2_image: /images/healthy.svg
+  text2: 'Healthy'
+  icon3_image: /images/trust.svg
+  text3: 'Reliable'
+testimonials:
+  testimonial1:
+    name: 'Testimonial 1'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial2:
+    name: 'Testimonial 2'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial3:
+    name: 'Testimonial 3'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+  testimonial4:
+    name: 'Testimonial 4'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    testimonial_image: /images/emily.jpg
+colors:
+  primary_color: '#49ac7f'
+  secondary_color: '#53b761'
+  tertiery_color: '#d5f6f2'
+  light_color: '#daede5'
+  dark_color: '#202b2f'
+contact_settings:
+  email: ecoverdesmokesupply@gmail.com
+  email_subject: 'Message via Cali Eco Smoke Supply Website'
+  send_button_text: 'Send Message'
+  phone: '4843345963'
+  scheduling_link: 'https://calendly.com/'
+social_settings:
+  facebook_url: 'https://www.facebook.com/'
+  twitter_url: 'https://www.twitter.com/'
+  instagram_url: 'https://www.instagram.com/'
+  youtube_url: 'https://www.youtube.com/'
+  pinterest_url: 'https://www.pinterest.com/'
+  linkedin_url: 'https://www.linkedin.com/'
 layout: default
 ---
-<div class ="header-image" style="background-image: url({{site.data.settings.header.header_image}}); opacity: {{site.data.settings.header.header_image_opacity}};">
+<div class ="header-image" style="background-image: url({{page.header.header_image}}); opacity: {{page.header.header_image_opacity}};">
 </div>
 <header class="header header-padding grid-bottom">
   <nav id="top" class="nav grid-spaceBetween">
     <div class="logo-container">
-      <img src="{{site.data.settings.basic_settings.logo_image}}" alt="cali eco smoke logo"/>
+      <img src="{{page.basic_settings.logo_image}}" alt="cali eco smoke logo"/>
     </div>
     <div class="hide-tablet">
-      <a href="tel:{{site.data.settings.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
+      <a href="tel:{{page.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
     </div>
   </nav>
   <div class="col-8_md-12 center-on-mobile">
@@ -23,38 +75,38 @@ layout: default
     <h2 class="text-white editable">Because your green should also be green.</h2>
     <div class="grid pad-bottom-m">
       <a href="/#about" class="pad-right-xs hide-mobile"><button class="button-white">Learn More</button></a>
-      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
 <section id="about">
   <div class="text-box grid-middle">
-    <span class="col-6_md-12 headshot" style="background-image: url({{site.data.settings.about.headshot_image}});"></span>
+    <span class="col-6_md-12 headshot" style="background-image: url({{page.about.headshot_image}});"></span>
     <div class="col-6_md-12">
       <div class="pad-all-s">
         <h3 class="editable">Work with us to make your dispensary’s packaging and supplies more eco-friendly.</h3>
         <p class="editable">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{site.data.settings.colors.primary_color}};
-          border: solid {{site.data.settings.colors.primary_color}} 1px;">Schedule a Consultation</button></a>
+        <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{page.colors.primary_color}};
+          border: solid {{page.colors.primary_color}} 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween pad-top-xs">
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon1_image}}"/>
+            <img src="{{page.about.icon1_image}}"/>
             <p>
-              {{site.data.settings.about.text1}}
+              {{page.about.text1}}
             </p>
           </div>
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon2_image}}"/>
+            <img src="{{page.about.icon2_image}}"/>
             <p>
-              {{site.data.settings.about.text2}}
+              {{page.about.text2}}
             </p>
           </div>
           <div class="text-center icon">
-            <img src="{{site.data.settings.about.icon3_image}}"/>
+            <img src="{{page.about.icon3_image}}"/>
             <p>
-              {{site.data.settings.about.text3}}
+              {{page.about.text3}}
             </p>
           </div>
         </div>
@@ -70,22 +122,22 @@ layout: default
 
       <div class="text-box grid">
         <div class="col-7_md-12 pad-all-s">
-          <h3>{{site.data.settings.testimonials.testimonial1.name}}</h3>
+          <h3>{{page.testimonials.testimonial1.name}}</h3>
           <p>
-            {{site.data.settings.testimonials.testimonial1.text}}
+            {{page.testimonials.testimonial1.text}}
           </p>
         </div>
-        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{site.data.settings.testimonials.testimonial1.testimonial_image}});"></span>
+        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial1.testimonial_image}});"></span>
       </div>
 
       <div class="text-box grid margin-top-m">
         <div class="col-7_md-12 pad-all-s">
-          <h3>{{site.data.settings.testimonials.testimonial2.name}}</h3>
+          <h3>{{page.testimonials.testimonial2.name}}</h3>
           <p>
-            {{site.data.settings.testimonials.testimonial2.text}}
+            {{page.testimonials.testimonial2.text}}
           </p>
         </div>
-        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{site.data.settings.testimonials.testimonial2.testimonial_image}});"></span>
+        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial2.testimonial_image}});"></span>
       </div>
 
     </div>
@@ -93,22 +145,22 @@ layout: default
 
       <div class="text-box grid margin-top-l">
         <div class="col-7_md-12 pad-all-s">
-          <h3>{{site.data.settings.testimonials.testimonial3.name}}</h3>
+          <h3>{{page.testimonials.testimonial3.name}}</h3>
           <p>
-            {{site.data.settings.testimonials.testimonial3.text}}
+            {{page.testimonials.testimonial3.text}}
           </p>
         </div>
-        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{site.data.settings.testimonials.testimonial3.testimonial_image}});"></span>
+        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial3.testimonial_image}});"></span>
       </div>
 
       <div class="text-box grid margin-top-m">
         <div class="col-7_md-12 pad-all-s">
-          <h3>{{site.data.settings.testimonials.testimonial4.name}}</h3>
+          <h3>{{page.testimonials.testimonial4.name}}</h3>
           <p>
-            {{site.data.settings.testimonials.testimonial4.text}}
+            {{page.testimonials.testimonial4.text}}
           </p>
         </div>
-        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{site.data.settings.testimonials.testimonial4.testimonial_image}});"></span>
+        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial4.testimonial_image}});"></span>
       </div>
 
     </div>
@@ -150,9 +202,9 @@ layout: default
 <section>
   <div class="grid-center text-center">
     <div class="col-9_md-12">
-      <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
+      <image src="{{page.basic_settings.logo_image}}"></image>
       <p class="header-text text-white editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </section>
@@ -170,48 +222,48 @@ layout: default
   </div>
 </section>
 <section>
-  <a href="tel:{{site.data.settings.contact_settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
+  <a href="tel:{{page.contact_settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
   <div class="grid-spaceAround pad-all-xs pad-top-s">
-    {% if site.data.settings.social_settings.facebook_url != '' %}
+    {% if page.social_settings.facebook_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.facebook_url}}" target="blank"><i class="fa fa-facebook-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.facebook_url}}" target="blank"><i class="fa fa-facebook-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.instagram_url != '' %}
+    {% if page.social_settings.instagram_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.instagram_url}}" target="blank"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.instagram_url}}" target="blank"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.twitter_url != '' %}
+    {% if page.social_settings.twitter_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.twitter_url}}" target="blank"><i class="fa fa-twitter-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.twitter_url}}" target="blank"><i class="fa fa-twitter-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.youtube_url != '' %}
+    {% if page.social_settings.youtube_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.youtube_url}}" target="blank"><i class="fa fa-youtube-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.youtube_url}}" target="blank"><i class="fa fa-youtube-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.pinterest_url != '' %}
+    {% if page.social_settings.pinterest_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.pinterest_url}}" target="blank"><i class="fa fa-pinterest-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.pinterest_url}}" target="blank"><i class="fa fa-pinterest-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.linkedin_url != '' %}
+    {% if page.social_settings.linkedin_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.linkedin_url}}" target="blank"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.linkedin_url}}" target="blank"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
   </div>
   <div class="text-box margin-top-m pad-all-s">
     <h2 class="text-center pad-bottom-s">Send an Email</h2>
-    <form method="post" action="https://formspree.io/{{site.data.settings.contact_settings.email}}" id="contact-form">
+    <form method="post" action="https://formspree.io/{{page.contact_settings.email}}" id="contact-form">
       <div>
         <input type="text" name="email" placeholder="Your email address...">
       </div>
@@ -221,11 +273,11 @@ layout: default
       <div>
         <textarea name="message" placeholder="Your message..."></textarea>
       </div>
-      <input type="hidden" name="_subject" value="{{ site.data.settings.contact_settings.email_subject }}" />
+      <input type="hidden" name="_subject" value="{{ page.contact_settings.email_subject }}" />
       <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="">
       <div class="contact-form__item">
-        <input type="submit" value="{{ site.data.settings.contact_settings.send_button_text }}" class="button-main" style="background:{{site.data.settings.colors.primary_color}};
-          border: solid {{site.data.settings.colors.primary_color}} 1px; width: 100%;">
+        <input type="submit" value="{{ page.contact_settings.send_button_text }}" class="button-main" style="background:{{page.colors.primary_color}};
+          border: solid {{page.colors.primary_color}} 1px; width: 100%;">
       </div>
     </form>
   </div>
