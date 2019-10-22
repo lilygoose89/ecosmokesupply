@@ -9,10 +9,7 @@ plugins:
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Cali Eco Smoke
-author:
-  name: Emily Clapp
-  email: ecoverdesmokesupply@gmail.com
-  twitter:
+author: Emily Clapp
 social:
   name:
   links:

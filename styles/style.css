@@ -113,6 +113,10 @@ p,li {
 }
 a {
   text-decoration: none;
+  color: #49ac7f;
+}
+a:hover {
+  text-decoration: underline;
 }
 @media all and (max-width:1024px) {
 
@@ -207,7 +211,7 @@ a {
 .headshot {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
-  height: 550px;
+  min-height: 650px;
   /* width: 100%; */
   /* min-height: 500px; */
   background-image: url(/images/emily.jpg);
