@@ -9,7 +9,7 @@ basic_settings:
   og_image: /images/screenshot.png
   logo_image: /images/caliecosmoke-logo-white.png
 header:
-  header_image: /images/leaves.jpg
+  header_image: /images/woman.jpg
   header_image_opacity: 0.2
 about:
   headshot_image: /images/emily.jpg
@@ -47,7 +47,7 @@ contact_settings:
   email_subject: 'Message via Cali Eco Smoke Supply Website'
   send_button_text: 'Send Message'
   phone: '4843345963'
-  scheduling_link: 'https://calendly.com/'
+  scheduling_link: '#contact'
 social_settings:
   facebook_url: 'https://www.facebook.com/'
   twitter_url: 'https://www.twitter.com/'
@@ -64,8 +64,9 @@ layout: default
     <div class="logo-container">
       <img src="{{page.basic_settings.logo_image}}" alt="cali eco smoke logo"/>
     </div>
-    <div class="hide-tablet">
+    <div class="hide-tablet text-right">
       <a href="tel:{{page.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
+      <a href="#contact" class="phone-text"><h4><i class="fa fa-envelope" aria-hidden="true"></i> Send an Email</h4></a>
     </div>
   </nav>
   <div class="col-8_md-12 center-on-mobile">
@@ -114,9 +115,9 @@ layout: default
     </div>
   </div>
 </section>
-<section>
+
+<!-- <section>
   <h2 class="text-center text-white pad-bottom-s editable">Trusted by clients, partners and industry leaders.</h2>
-  <!-- grid around all four testimonial boxes -->
   <div class="grid">
     <div class="col-6_md-12">
 
@@ -162,10 +163,10 @@ layout: default
         </div>
         <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial4.testimonial_image}});"></span>
       </div>
-
     </div>
   </div>
-</section>
+</section> -->
+
 <section>
   <h2 class="text-center text-white editable">Services</h2>
   <div class="text-box pad-all-s editable">
@@ -261,7 +262,7 @@ layout: default
     {% else %}
     {% endif %}
   </div>
-  <div class="text-box margin-top-m pad-all-s">
+  <div class="text-box margin-top-m pad-all-s" id="contact">
     <h2 class="text-center pad-bottom-s">Send an Email</h2>
     <form method="post" action="https://formspree.io/{{page.contact_settings.email}}" id="contact-form">
       <div>
@@ -269,6 +270,9 @@ layout: default
       </div>
       <div>
         <input type="text" name="name" placeholder="Your name...">
+      </div>
+      <div>
+        <input type="text" name="phone" placeholder="Your phone number...">
       </div>
       <div>
         <textarea name="message" placeholder="Your message..."></textarea>

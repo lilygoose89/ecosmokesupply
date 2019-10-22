@@ -52,15 +52,16 @@
 <!-- scroll to top container (floats near the bottom right) -->
 <a href="#top" class="scroll-to-top-container"><i class="fa fa-arrow-circle-up scroll-to-top-icon" aria-hidden="true"></i></a>
 
-    <div class ="header-image" style="background-image: url(/images/leaves.jpg); opacity: 0.2;">
+    <div class ="header-image" style="background-image: url(/images/woman.jpg); opacity: 0.2;">
 </div>
 <header class="header header-padding grid-bottom">
   <nav id="top" class="nav grid-spaceBetween">
     <div class="logo-container">
       <img src="/images/caliecosmoke-logo-white.png" alt="cali eco smoke logo"/>
     </div>
-    <div class="hide-tablet">
+    <div class="hide-tablet text-right">
       <a href="tel:4843345963" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
+      <a href="#contact" class="phone-text"><h4><i class="fa fa-envelope" aria-hidden="true"></i> Send an Email</h4></a>
     </div>
   </nav>
   <div class="col-8_md-12 center-on-mobile">
@@ -70,7 +71,7 @@
     <h2 class="text-white editable">Because your green should also be green.</h2>
     <div class="grid pad-bottom-m">
       <a href="/#about" class="pad-right-xs hide-mobile"><button class="button-white">Learn More</button></a>
-      <a href="https://calendly.com/" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="#contact" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
@@ -83,7 +84,7 @@
         <p class="editable">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <a href="https://calendly.com/" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:#49ac7f;
+        <a href="#contact" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:#49ac7f;
           border: solid #49ac7f 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween pad-top-xs">
           <div class="text-center icon">
@@ -109,9 +110,9 @@
     </div>
   </div>
 </section>
-<section>
+
+<!-- <section>
   <h2 class="text-center text-white pad-bottom-s editable">Trusted by clients, partners and industry leaders.</h2>
-  <!-- grid around all four testimonial boxes -->
   <div class="grid">
     <div class="col-6_md-12">
 
@@ -157,10 +158,10 @@
         </div>
         <span class="testimonial-headshot col-5_md-12" style="background-image: url(/images/emily.jpg);"></span>
       </div>
-
     </div>
   </div>
-</section>
+</section> -->
+
 <section>
   <h2 class="text-center text-white editable">Services</h2>
   <div class="text-box pad-all-s editable">
@@ -199,7 +200,7 @@
     <div class="col-9_md-12">
       <image src="/images/caliecosmoke-logo-white.png"></image>
       <p class="header-text text-white editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="https://calendly.com/" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="#contact" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </section>
@@ -250,7 +251,7 @@
     </div>
     
   </div>
-  <div class="text-box margin-top-m pad-all-s">
+  <div class="text-box margin-top-m pad-all-s" id="contact">
     <h2 class="text-center pad-bottom-s">Send an Email</h2>
     <form method="post" action="https://formspree.io/ecoverdesmokesupply@gmail.com" id="contact-form">
       <div>
@@ -258,6 +259,9 @@
       </div>
       <div>
         <input type="text" name="name" placeholder="Your name...">
+      </div>
+      <div>
+        <input type="text" name="phone" placeholder="Your phone number...">
       </div>
       <div>
         <textarea name="message" placeholder="Your message..."></textarea>
