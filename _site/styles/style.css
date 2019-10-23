@@ -247,7 +247,7 @@ a:hover {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
     border-bottom-left-radius: 0;
-    height: 450px;
+    min-height: 500px;
   }
   .testimonial-headshot {
     border-top-left-radius: 0;
