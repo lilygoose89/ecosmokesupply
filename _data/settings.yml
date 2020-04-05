@@ -1,0 +1,33 @@
+colors:
+  # HEX codes have to be wrapped in single quotes (single or double) to respect YAML syntax
+  primary_color: '#c01b1b'
+  secondary_color: '#13e45d'
+  tertiery_color: '#0b3beb'
+  light_color: '#eeeeee'
+  dark_color: '#eeeeee'
+basic_settings:
+  site_title: Cali Eco Smoke Supply
+  favicon_image: /images/favicon.ico
+  og_image: /images/screenshot.png
+  logo_image: /images/caliecosmoke-logo-white.png
+contact_settings:
+  email: ecoverdesmokesupply@gmail.com
+  email_subject: Message via Cali Eco Smoke Supply Website
+  send_button_text: Send Message
+  phone: '4843345963'
+  # URLs have to be wrapped in SINGLE QUOTATION to respect YAML syntax
+  scheduling_link: 'https://www.calendly.com/caliecosmoke'
+mailchimp_embed_code_block:
+social_settings:
+  facebook_url:
+  twitter_url: 'https://twitter.com/smoke_eco'
+  instagram_url: 'https://www.instagram.com/caliecosmoke/'
+  youtube_url: 'https://www.youtube.com/channel/UC7fAwHxzHvnjBK9J3wIlOLA'
+  pinterest_url:
+  linkedin_url:
+font_embed:
+  # the code must be wrapped in SINGLE QUOTATION marks to respect YAML syntax
+  google_fonts_code_block: '<link href="https://fonts.googleapis.com/css?family=Oswald:300|Poppins&display=swap" rel="stylesheet">'
+heading_1:
+  heading_1_weight: 400
+  heading_1_transform: uppercase

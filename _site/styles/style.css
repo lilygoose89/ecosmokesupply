@@ -7,7 +7,7 @@ img {
   height: auto;
 }
 /* body {
-  background: linear-gradient(35deg,url({{site.data.settings.colors.color1}}),url({{site.data.settings.colors.color2}}));
+  background: linear-gradient(35deg,url(),url());
   background-size: 400% 400%;
   animation: gradientBG 5s ease infinite;
 } */
@@ -212,8 +212,6 @@ a:hover {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   min-height: 650px;
-  /* width: 100%; */
-  /* min-height: 500px; */
   background-image: url(/images/emily.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,3 +442,12 @@ input:focus,textarea:focus {
 .position-abs {
   position: absolute;
 }
+
+body {
+  background-color: #c01b1b;
+  background: linear-gradient(70deg,#c01b1b,#13e45d,#0b3beb);
+  background-size: 500% 500%;
+  animation: gradientBG 12s ease infinite;
+}
+
+a {color: #c01b1b; }
