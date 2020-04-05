@@ -6,6 +6,11 @@ description: >-
 keywords:
 author:
   - name
+basic_settings:
+  site_title: Cali Eco Smoke Supply
+  favicon_image: /images/favicon.ico
+  og_image: /images/screenshot.png
+  logo_image: /images/caliecosmoke-logo-white.png
 header:
   header_image: /images/woman.jpg
   header_image_opacity: 0.2
@@ -17,17 +22,11 @@ about:
   text2: Healthy
   icon3_image: /images/trust.svg
   text3: Reliable
-add_testimonials: false
 testimonials:
   testimonial1:
-    name: Testimonial 1
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
-    testimonial_image: /images/emily.jpg
+    name:
+    text:
+    testimonial_image:
   testimonial2:
     name: Testimonial 2
     text: >-
@@ -55,6 +54,26 @@ testimonials:
       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
       velit esse cillum dolore eu fugiat nulla pariatur.
     testimonial_image: /images/emily.jpg
+colors:
+  primary_color: '#49ac7f'
+  secondary_color: '#53b761'
+  tertiery_color: '#d5f6f2'
+  light_color: '#daede5'
+  dark_color: '#202b2f'
+contact_settings:
+  email: ecoverdesmokesupply@gmail.com
+  email_subject: Message via Cali Eco Smoke Supply Website
+  send_button_text: Send Message
+  phone: '4843345963'
+  scheduling_link: 'https://www.calendly.com/caliecosmoke'
+mailchimpembed: "<!-- Begin Mailchimp Signup Form --> <link href=\"//cdn-images.mailchimp.com/embedcode/classic-10_7.css\" rel=\"stylesheet\" type=\"text/css\"> <style type=\"text/css\"> \t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } \t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. \t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id=\"mc_embed_signup\"> <form action=\"https://californiaecosmokesupply.us3.list-manage.com/subscribe/post?u=8ef0b6e0d227110ff4ba720a8&amp;id=34f5a100a8\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>     <div id=\"mc_embed_signup_scroll\"> \t<h2>Be more green: leave your email for free eco tips and ebook </h2> <div class=\"indicates-required\"><span class=\"asterisk\">*</span> indicates required</div> <div class=\"mc-field-group\"> \t<label for=\"mce-EMAIL\">Email Address  <span class=\"asterisk\">*</span> </label> \t<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\"> </div> \t<div id=\"mce-responses\" class=\"clear\"> \t\t<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div> \t\t<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div> \t</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_8ef0b6e0d227110ff4ba720a8_34f5a100a8\" tabindex=\"-1\" value=\"\"></div>     <div class=\"clear\"><input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>     </div> </form> </div> <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';fnames[12]='MMERGE12';ftypes[12]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->"
+social_settings:
+  facebook_url:
+  twitter_url: 'https://twitter.com/smoke_eco'
+  instagram_url: 'https://www.instagram.com/caliecosmoke/'
+  youtube_url: 'https://www.youtube.com/channel/UC7fAwHxzHvnjBK9J3wIlOLA'
+  pinterest_url:
+  linkedin_url:
 layout: default
 ---
 
@@ -63,10 +82,10 @@ layout: default
 <header class="header header-padding grid-bottom">
   <nav id="top" class="nav grid-spaceBetween">
     <div class="logo-container">
-      <img src="{{site.data.settings.basic_settings.logo_image}}" alt="cali eco smoke logo" />
+      <img src="{{page.basic_settings.logo_image}}" alt="cali eco smoke logo" />
     </div>
     <div class="hide-tablet text-right">
-      <a href="tel:{{site.data.settings.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
+      <a href="tel:{{page.contact_settings.phone}}" class="phone-text"><h4><i class="fa fa-phone-square" aria-hidden="true"></i> Call us today 484-334-5963</h4></a>
       <a href="#contact" class="phone-text"><h4><i class="fa fa-envelope" aria-hidden="true"></i> Send an Email</h4></a>
     </div>
   </nav>
@@ -79,7 +98,7 @@ layout: default
     </h2>
     <div class="grid pad-bottom-m">
       <a href="#about" class="pad-right-xs hide-mobile"><button class="button-white">Learn More</button></a>
-      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </header>
@@ -94,7 +113,8 @@ layout: default
         <p class="editable">
           Consumers have never been more conscious of the harm that excess plastic is doing to our planet, not to mention our bodies. Are the materials you use to store and package your smoke supplies the best you could be using?<br /><br />Build sustainability into the heart of your brand. It's not just good for the planet, it's also good business sense.<br /><br />Whether you're an influencer or you run a dispensary, we can help you to audit your routines and processes and find way to reduce waste, find eco-friendly substitutes and more.<br /><br />Let's chat about going green today. Your first consultation is free.
         </p>
-        <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s">Schedule a Consultation</button></a>
+        <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-main margin-top-xs margin-bottom-s" style="background:{{page.colors.primary_color}};
+          border: solid {{page.colors.primary_color}} 1px;">Schedule a Consultation</button></a>
         <div class="grid-spaceBetween-center pad-top-xs">
           <div class="text-center icon">
             <img src="{{page.about.icon1_image}}" />
@@ -120,9 +140,63 @@ layout: default
   </div>
 </section>
 
-{% if page.add_testimonials == true %}
-  {% include testimonials.html %}
-{% endif %}
+<!--<section>-->
+<!--  <h2 class="text-center text-white pad-bottom-s editable">Trusted by clients, partners and industry leaders.</h2>-->
+  
+<!--  <div class="grid">-->
+
+<!--    <div class="col-6_md-12">-->
+
+<!--      <div class="text-box grid margin-top-m">-->
+<!--        <div class="col-7_md-12 pad-all-s">-->
+<!--          <h3>{{page.testimonials.testimonial1.name}}</h3>-->
+<!--          <p>-->
+<!--            {{page.testimonials.testimonial1.text}}-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial1.testimonial_image}});"></span>-->
+<!--      </div>-->
+
+<!--      <div class="text-box grid margin-top-m">-->
+<!--        <div class="col-7_md-12 pad-all-s">-->
+<!--          <h3>{{page.testimonials.testimonial2.name}}</h3>-->
+<!--          <p>-->
+<!--            {{page.testimonials.testimonial2.text}}-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial2.testimonial_image}});"></span>-->
+<!--      </div>-->
+
+<!--    </div>-->
+
+
+<!--    <div class="col-6_md-12 pad-top-s">-->
+
+<!--      <div class="text-box grid margin-top-m">-->
+<!--        <div class="col-7_md-12 pad-all-s">-->
+<!--          <h3>{{page.testimonials.testimonial3.name}}</h3>-->
+<!--          <p>-->
+<!--            {{page.testimonials.testimonial3.text}}-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial3.testimonial_image}});"></span>-->
+<!--      </div>-->
+
+<!--      <div class="text-box grid margin-top-m">-->
+<!--        <div class="col-7_md-12 pad-all-s">-->
+<!--          <h3>{{page.testimonials.testimonial4.name}}</h3>-->
+<!--          <p>-->
+<!--            {{page.testimonials.testimonial4.text}}-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <span class="testimonial-headshot col-5_md-12" style="background-image: url({{page.testimonials.testimonial4.testimonial_image}});"></span>-->
+<!--      </div>-->
+
+
+<!--    </div>-->
+
+<!--  </div>-->
+<!--</section>-->
 
 <section>
   <h2 class="text-center text-white editable">
@@ -152,11 +226,11 @@ layout: default
 <section>
   <div class="grid-center text-center">
     <div class="col-9_md-12">
-      <image src="{{site.data.settings.basic_settings.logo_image}}"></image>
+      <image src="{{page.basic_settings.logo_image}}"></image>
       <p class="header-text text-white editable">
         The decisions you make every day add up to a pretty big impact on the planet. If weed is a major part of your lifestyle or business, then you should be thinking about ways to make your routines as eco-friendly as possible. We're here to help, and an initial consultation is free, so what is there to lose? Don't you want your green to be more green?
       </p>
-      <a href="{{site.data.settings.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
+      <a href="{{page.contact_settings.scheduling_link}}" target="blank"><button class="button-white">Schedule a Consultation</button></a>
     </div>
   </div>
 </section>
@@ -172,54 +246,54 @@ layout: default
       </p>
     </div>
     <div class="col-6_md-12 pad-all-s">
-      {{site.data.settings.mailchimpembed}}
+      {{page.mailchimpembed}}
     </div>
   </div>
 </section>
 
 <section>
-  <a href="tel:{{site.data.settings.contact_settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
+  <a href="tel:{{page.contact_settings.phone}}" class="text-center"><h2 class="text-white">Call us <span class="hide-mobile">today </span>484-334-5963</h2></a>
   <div class="grid-spaceAround pad-all-xs pad-top-s">
-    {% if site.data.settings.social_settings.facebook_url != '' %}
+    {% if page.social_settings.facebook_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.facebook_url}}" target="blank"><i class="fa fa-facebook-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.facebook_url}}" target="blank"><i class="fa fa-facebook-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.instagram_url != '' %}
+    {% if page.social_settings.instagram_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.instagram_url}}" target="blank"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.instagram_url}}" target="blank"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.twitter_url != '' %}
+    {% if page.social_settings.twitter_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.twitter_url}}" target="blank"><i class="fa fa-twitter-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.twitter_url}}" target="blank"><i class="fa fa-twitter-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.youtube_url != '' %}
+    {% if page.social_settings.youtube_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.youtube_url}}" target="blank"><i class="fa fa-youtube-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.youtube_url}}" target="blank"><i class="fa fa-youtube-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.pinterest_url != '' %}
+    {% if page.social_settings.pinterest_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.pinterest_url}}" target="blank"><i class="fa fa-pinterest-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.pinterest_url}}" target="blank"><i class="fa fa-pinterest-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
-    {% if site.data.settings.social_settings.linkedin_url != '' %}
+    {% if page.social_settings.linkedin_url != '' %}
     <div>
-      <a href="{{site.data.settings.social_settings.linkedin_url}}" target="blank"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i></a>
+      <a href="{{page.social_settings.linkedin_url}}" target="blank"><i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i></a>
     </div>
     {% else %}
     {% endif %}
   </div>
   <div class="text-box margin-top-m pad-all-s" id="contact">
-    <h2 class="text-center pad-bottom-s" style="color:{{site.data.settings.colors.dark_color}}">Send an Email</h2>
-    <form method="post" action="https://formspree.io/{{site.data.settings.contact_settings.email}}" id="contact-form">
+    <h2 class="text-center pad-bottom-s">Send an Email</h2>
+    <form method="post" action="https://formspree.io/{{page.contact_settings.email}}" id="contact-form">
       <div>
         <input type="text" name="email" placeholder="Your email address..." />
       </div>
@@ -232,11 +306,11 @@ layout: default
       <div>
         <textarea name="message" placeholder="Your message..."></textarea>
       </div>
-      <input type="hidden" name="_subject" value="{{ site.data.settings.contact_settings.email_subject }}" />
+      <input type="hidden" name="_subject" value="{{ page.contact_settings.email_subject }}" />
       <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="" />
       <div class="contact-form__item">
-        <input type="submit" value="{{ site.data.settings.contact_settings.send_button_text }}" class="button-main" style="background:{{site.data.settings.colors.primary_color}};
-          border: solid {{site.data.settings.colors.primary_color}} 1px; width: 100%;" />
+        <input type="submit" value="{{ page.contact_settings.send_button_text }}" class="button-main" style="background:{{page.colors.primary_color}};
+          border: solid {{page.colors.primary_color}} 1px; width: 100%;" />
       </div>
     </form>
   </div>

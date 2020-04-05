@@ -1,6 +1,3 @@
----
----
-
 /* universal styles ----------------------------------------- */
 * {
   box-sizing: border-box;
@@ -215,6 +212,8 @@ a:hover {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   min-height: 650px;
+  /* width: 100%; */
+  /* min-height: 500px; */
   background-image: url(/images/emily.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -445,12 +444,3 @@ input:focus,textarea:focus {
 .position-abs {
   position: absolute;
 }
-
-body {
-  background-color: {{site.data.settings.colors.primary_color}};
-  background: linear-gradient(70deg,{{site.data.settings.colors.primary_color}},{{site.data.settings.colors.secondary_color}},{{site.data.settings.colors.tertiery_color}});
-  background-size: 500% 500%;
-  animation: gradientBG 12s ease infinite;
-}
-
-a {color: {{site.data.settings.colors.primary_color}}; }
